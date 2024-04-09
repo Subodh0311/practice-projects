@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0% ;
+}
+
+body{
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-container{
+    background-color: white;
+    height: 450px;
+    width: 400px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    width:400px;
+    background-color: rgba(39, 143, 181, 0.877);
+    /* background-color:white; */
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    /* margin-top: 20px; */
+    box-sizing: border-box;
+    border-radius: 50%;
+    
+}
+
+.profile-image {
+    border: 5px solid rgba(39, 143, 181, 0.877);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    padding: 3px;
+    object-fit: cover;
+}
+
+
+
+.name{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.job{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.icons>*{
+    margin-top: 19px;
+    font-size: 2rem;
+}
+
+.contact{
+    background-color:rgba(39, 143, 181, 0.877) ;
+    color: white;
+    font-size: 1.8rem;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.smt{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.line{
+    border-left: 0.1px solid black;
+}
+
+@media (max-width:400px){
+    .big-container{
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
