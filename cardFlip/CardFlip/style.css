@@ -1,0 +1,185 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+section{
+    position: relative;
+    background: #121321;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 240px;
+    width: 240px;
+    transform: translate(-150px,-100px);
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(150px,100px);
+    height: 240px;
+    width: 240px;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+}
+
+.container{
+    height: 225px;
+    width: 375px;
+    z-index: 100;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+.container .card{
+    height: 225px;
+    width: 375px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 25px 45px rgba(0,0,0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front-face header ,.front-face .logo{
+    display: flex;
+    align-items: center;
+}
+
+.front-face header{
+    display: flex;
+    justify-content: space-around;
+    /* padding: px; */
+    margin-top: 20px;
+}
+
+.front-face .logo img{
+    width: 58px;
+    
+}
+
+.front-face .logo h5{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.front-face .chip{
+    width: 58px;
+}
+
+.front-face .card-details{
+    color: white;
+    margin-top: 20px;
+    margin-left: 55px;
+}
+
+.card-details .num-text{
+    font-size: 14px;
+}
+.card-details .number{
+    font-size: 23px;
+    padding-top: 5px;
+}
+
+.front-face .name{
+    display: flex;
+    margin-top: 20px;
+    /* gap: 118px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.front-face .name .myname{
+    font-size: 23px;
+    display: flex;
+    font-weight: 100;
+}
+
+.exp{
+    margin-right: 40px;
+}
+
+.exp .exp-text{
+    font-size: 14px;
+}
+
+.exp .date{
+    font-size: 23px;
+
+}
+
+.card.back-face{
+    color: white;
+    border: none;
+    /* padding: 15px 25px 25px 0p; */
+    transform: rotateY(180deg);
+    /* position: absolute; */
+    width: 375px;
+}
+
+.back-face h6{
+    /* margin-top: 20px; */
+    padding: 20px;
+    font-size: 10px;
+}
+
+.back-face .magnetic-strip{
+    position: absolute;
+    height: 45px;
+    width: 100%;
+    background-color: #000;
+    top: 50px;
+}
+
+.back-face .signature {
+    height: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    
+}
+
+.back-face .signature .white-strip{
+    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: white;
+    
+}
+
+.back-face .signature .cvv{
+    margin-top: 40px;
+    background-color: white;
+    color: black;
+    padding: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.back-face .text{
+    font-size: 9.8px;
+    margin-top: 35px;
+    margin-left: 40px;
+    margin-right: 35px;   
+}
