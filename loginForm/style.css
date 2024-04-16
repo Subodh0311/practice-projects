@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(55, 207, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 370px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 10px 15px rgba(180, 216, 198, 0.5);
+}
+
+.container header{
+    width: 100%;
+    height: 25%;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(37, 170, 135);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .inputs{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .inputs input{
+    height: 35px;
+    width: 250px;
+    border-left: none;
+    border-width: 1px;
+    padding-left: 10px;
+
+}
+
+.details .inputs input:focus{
+    border-color: aquamarine;
+}
+
+.details .inputs .logo{
+    display: flex;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(37, 170, 135);
+    width: 38px;
+    height: 38px;
+}
+
+.forp{
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+.link{
+    color: rgb(37, 170, 135);
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.link:hover{
+    color: rgb(13, 125, 95);
+
+}
+
+.details .login input{
+    border: none;
+    background-color: rgb(37, 170, 135);
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.details .login input:hover{
+    background-color: rgb(13, 125, 95);
+}
+
+.details .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
